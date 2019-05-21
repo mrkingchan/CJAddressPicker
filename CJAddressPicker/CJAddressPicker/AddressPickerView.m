@@ -101,7 +101,7 @@
 // MARK: - hide
 - (void)hide {
     [UIView animateWithDuration:0.2 animations:^{
-        _containerView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 230);
+       self->_containerView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 230);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];
